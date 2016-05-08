@@ -67,9 +67,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
         let filme = listaFilmes[indexPath.row]
-        
         cell!.textLabel!.text = filme.valueForKey("titulo") as? String
-        
         return cell!
     }
     

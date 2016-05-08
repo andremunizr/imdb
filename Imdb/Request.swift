@@ -13,9 +13,7 @@ class Request: NSObject {
     private let HOST = "http://www.omdbapi.com/?"
     
     func GET(recurso: String, callback: Dictionary<String, AnyObject> -> ()){
-        
         let request = NSURL(string: "\(HOST)\(recurso)")
-        print(request)
         let task = NSURLSession.sharedSession().dataTaskWithURL(request!){(data, response, error) in
             
             var dataToReturn = Dictionary<String, AnyObject>()
