@@ -62,7 +62,6 @@ class DetalheViewController: UIViewController {
         }
         let houveErro = response["houveErro"] as! Bool
         var dict = helper.convertDataToDictionary(data, houveErro: houveErro ) as! [String:AnyObject]
-        print(dict)
         if nil != dict["Error"] {
             dispatch_async(self.helper.globalMainQueue, {
                 () -> Void in
