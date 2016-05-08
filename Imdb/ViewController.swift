@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet var tableFilmes: UITableView!
     @IBOutlet var label: UILabel!
     var listaFilmes = [NSManagedObject]()
+    var filmeSelecionado:NSManagedObject!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
         listarFilmes()
     }
     
@@ -59,7 +61,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // MARK: - UITableView
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        NSLog("\(listaFilmes.count)")
         return listaFilmes.count
     }
     
@@ -73,9 +74,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let filmeSelecionado = listaFilmes[indexPath.row]
+        chamarTelaDetalhe(filmeSelecionado)
+        
         tableFilmes.deselectRowAtIndexPath(indexPath, animated: false)
     }
     
+    //MARK: - Navigation
+    func chamarTelaDetalhe(selecionado: NSManagedObject){
+        filmeSelecionado = selecionado
+        performSegueWithIdentifier("fromMainToDetalhe", sender: self)
+    }
+  
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if( segue.identifier == "fromMainToDetalhe" ){
+            let detalheView = segue.destinationViewController as! DetalheViewController
+            detalheView.filmeSelecionado = filmeSelecionado
+        }
+    }
+
     // MARK: - Core Data
     func salvarFilme(filmeInformado:String){
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
