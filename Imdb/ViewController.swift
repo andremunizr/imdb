@@ -68,7 +68,7 @@ class ViewController: UIViewController,
     }
     
     @IBAction func mostrarFormularioDeInsercao(sender: UIButton){
-        let alerta = UIAlertController(title: "Novo filme", message: "Qual o nome do filme?", preferredStyle: .Alert)
+        let alerta = UIAlertController(title: nil, message: "Qual o nome do filme?", preferredStyle: .Alert)
         let defaultAction = UIAlertAction(title: "OK", style: .Default, handler: {
             (alert: UIAlertAction!) -> Void in
                 self.startIndicator()
@@ -84,6 +84,31 @@ class ViewController: UIViewController,
         })
         
         presentViewController(alerta, animated: true, completion:nil)
+    }
+    
+    @IBAction func mostrarMenu(sender: AnyObject, indexPath: NSIndexPath){
+        let filmeSelecionado = self.listaFilmes[indexPath.row]
+        let titulo = filmeSelecionado.valueForKey("titulo") as! String
+        
+        let alerta = UIAlertController(title: titulo, message: "E agora?", preferredStyle: .Alert)
+        let detalhar = UIAlertAction(title: "Detalhar", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            
+            
+            self.chamarTelaDetalhe(filmeSelecionado)
+        })
+        let remover = UIAlertAction(title: "Remover", style: .Destructive, handler: {
+            (alert: UIAlertAction!) -> Void in
+            
+        })
+        let cancelar = UIAlertAction(title: "Cancelar", style: .Cancel, handler: {
+            (alert: UIAlertAction!) -> Void in
+            
+        })
+        alerta.addAction(detalhar)
+        alerta.addAction(remover)
+        alerta.addAction(cancelar)
+        self.presentViewController(alerta, animated: true, completion: nil)
     }
     
     func imagemParaFilme(urlCartaz: String, index: Int){
@@ -118,12 +143,11 @@ class ViewController: UIViewController,
     }
     
     // MARK: UICollectionViewDelegate
-    
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        mostrarMenu(collectionView, indexPath: indexPath)
     }
     
     // MARK: UICollectionViewDelegateFlowLayout
-    
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let width = collectionView.bounds.width / 2 - 6
         let height = width * 1.4
@@ -135,19 +159,7 @@ class ViewController: UIViewController,
         return 1
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        let hideHeader: Bool = true
-        
-        if hideHeader {
-            NSLog("--------")
-            return CGSizeZero
-        } else {
-            return CGSizeMake(30,80)
-        }
-    }
-    
     // MARK: UICollectionViewDataSource
-    
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
