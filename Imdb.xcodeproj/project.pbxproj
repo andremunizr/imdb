@@ -17,6 +17,11 @@
 		A6A4788C1CDBBCF200C87F9F /* Imdb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6A4788A1CDBBCF200C87F9F /* Imdb.xcdatamodeld */; };
 		A6A4788E1CDBBCF200C87F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A4788D1CDBBCF200C87F9F /* Assets.xcassets */; };
 		A6A478911CDBBCF200C87F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A4788F1CDBBCF200C87F9F /* LaunchScreen.storyboard */; };
+		A6E681611CEFFDAE000D1338 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = A6E681601CEFFDAE000D1338 /* add.png */; };
+		A6E681631CEFFE96000D1338 /* add2.png in Resources */ = {isa = PBXBuildFile; fileRef = A6E681621CEFFE96000D1338 /* add2.png */; };
+		A6E681661CF0096C000D1338 /* FIlmeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E681651CF0096C000D1338 /* FIlmeCell.swift */; };
+		A6E681681CF00B80000D1338 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6E681671CF00B80000D1338 /* placeholder.jpg */; };
+		A6F290D51CEFBC7200031740 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F290D41CEFBC7200031740 /* plus.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		A6A4788D1CDBBCF200C87F9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6A478901CDBBCF200C87F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6A478921CDBBCF200C87F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E681601CEFFDAE000D1338 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		A6E681621CEFFE96000D1338 /* add2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add2.png; sourceTree = "<group>"; };
+		A6E681651CF0096C000D1338 /* FIlmeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIlmeCell.swift; sourceTree = "<group>"; };
+		A6E681671CF00B80000D1338 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
+		A6F290D41CEFBC7200031740 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,8 @@
 		A6A478821CDBBCF200C87F9F /* Imdb */ = {
 			isa = PBXGroup;
 			children = (
+				A6E681641CF00947000D1338 /* cell */,
+				A6F290D31CEFBC5B00031740 /* img */,
 				A655B3431CDF7607001FDB1A /* util */,
 				A6A478981CDC05CC00C87F9F /* model */,
 				A6A478831CDBBCF200C87F9F /* AppDelegate.swift */,
@@ -93,6 +105,25 @@
 			children = (
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		A6E681641CF00947000D1338 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				A6E681651CF0096C000D1338 /* FIlmeCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		A6F290D31CEFBC5B00031740 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				A6E681671CF00B80000D1338 /* placeholder.jpg */,
+				A6E681621CEFFE96000D1338 /* add2.png */,
+				A6E681601CEFFDAE000D1338 /* add.png */,
+				A6F290D41CEFBC7200031740 /* plus.png */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +186,11 @@
 			files = (
 				A6A478911CDBBCF200C87F9F /* LaunchScreen.storyboard in Resources */,
 				A6A4788E1CDBBCF200C87F9F /* Assets.xcassets in Resources */,
+				A6E681631CEFFE96000D1338 /* add2.png in Resources */,
 				A6A478891CDBBCF200C87F9F /* Main.storyboard in Resources */,
+				A6E681681CF00B80000D1338 /* placeholder.jpg in Resources */,
+				A6E681611CEFFDAE000D1338 /* add.png in Resources */,
+				A6F290D51CEFBC7200031740 /* plus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +208,7 @@
 				A6A478861CDBBCF200C87F9F /* ViewController.swift in Sources */,
 				A6A478841CDBBCF200C87F9F /* AppDelegate.swift in Sources */,
 				A655B3451CDF7873001FDB1A /* Helper.swift in Sources */,
+				A6E681661CF0096C000D1338 /* FIlmeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

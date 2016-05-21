@@ -180,7 +180,7 @@ class DetalheViewController: UIViewController {
     
     //MARK: - Nav
     @IBAction private func dismissView(){
-        self.navigationController?.popViewControllerAnimated(true)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     /*
