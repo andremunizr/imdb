@@ -38,7 +38,6 @@ class ViewController: UIViewController,
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        //self.navigationController?.navigationBarHidden = true
         sugestao.adjustsFontSizeToFitWidth = true
         listarFilmes()
     }
@@ -146,37 +145,6 @@ class ViewController: UIViewController,
                                                         }
             })
         }
-        
-        /*
-        let url = NSURL(string: urlCartaz)
-        let request:NSURLRequest = NSURLRequest(URL: url!)
-        if nil == dicionarioImagens[ hashValue ] {
-            NSURLConnection.sendAsynchronousRequest(request,
-                                                    queue: NSOperationQueue.mainQueue(),
-                                                    completionHandler: {
-                                                        (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
-                                                        if error == nil {
-                                                            let imagem = UIImage(data: data!)
-                                                            let transitionOptions = UIViewAnimationOptions.TransitionCrossDissolve
-                                                            dispatch_async(self.helper.globalMainQueue, {
-                                                                self.dicionarioImagens[ hashValue ] = imagem
-                                                                let imagemNaCell:UIImageView = (self.view.viewWithTag( index ) as? UIImageView)!
-                                                                self.salvarImagem(imagem!, hashValue: hashValue)
-                                                                
-                                                                UIView.transitionWithView(imagemNaCell, duration: 0.5, options: transitionOptions, animations: {
-                                                                    imagemNaCell.image = imagem
-                                                                    }, completion: nil)
-                                                            })
-                                                        }
-            })
-        }
-        else {
-            let image = self.dicionarioImagens[ hashValue ] as! UIImage
-            dispatch_async(self.helper.globalMainQueue, {
-                let imagemNaCell:UIImageView = (self.view.viewWithTag( index ) as? UIImageView)!
-                imagemNaCell.image = image
-            })
-        } */
     }
     
     func imagemParaHash(hashValue: Int) -> UIImage? {
@@ -380,13 +348,6 @@ class ViewController: UIViewController,
                                                             self.stopIndicator()
                                                             self.mostrarFilmeRecuperado()
                                                         })
-                                                                    
-                                                        /*let transitionOptions = UIViewAnimationOptions.TransitionCrossDissolve
-                                                        dispatch_async(self.helper.globalMainQueue, {
-                                                            UIView.transitionWithView(self.cartaz, duration: 0.5, options: transitionOptions, animations: {
-                                                                self.cartaz.image = imagem
-                                                                }, completion: nil)
-                                                        }) */
                                                     }
         })
     }
