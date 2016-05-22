@@ -26,14 +26,15 @@ class DetalheViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let titulo = filmeSelecionado.valueForKey("titulo") as? String
+        /*let titulo = filmeSelecionado.valueForKey("titulo") as? String
         
         if Reachability.isConnectedToNetwork() == true {
             getInfo(titulo!)
         }
         else {
             recuperarFilme(titulo!)
-        }
+        } */
+        setInfo(filmeSelecionado)
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,19 +77,27 @@ class DetalheViewController: UIViewController {
             
             dispatch_async(self.helper.globalMainQueue, {
                 () -> Void in
-                self.setInfo(dict)
+                //self.setInfo(dict)
             })
         }
     }
     
-    func setInfo(dict:[String:AnyObject]){
-        self.titulo.text = dict["Title"] as? String ?? ""
+    func setInfo(filme:NSManagedObject){
+        /*self.titulo.text = dict["Title"] as? String ?? ""
         self.ano.text = dict["Year"] as? String ?? ""
         self.duracao.text = dict["Runtime"] as? String ?? ""
         self.genero.text = dict["Genre"] as? String ?? ""
         self.diretor.text = dict["Director"] as? String ?? ""
         self.atores.text = dict["Actors"] as? String ?? ""
-        self.plot.text = dict["Plot"] as? String ?? ""
+        self.plot.text = dict["Plot"] as? String ?? "" */
+        
+        self.titulo.text = filme.valueForKey("titulo") as? String ?? ""
+        self.ano.text = filme.valueForKey("ano") as? String ?? ""
+        self.duracao.text = filme.valueForKey("duracao") as? String ?? ""
+        self.genero.text = filme.valueForKey("genero") as? String ?? ""
+        self.diretor.text = filme.valueForKey("diretor") as? String ?? ""
+        self.atores.text = filme.valueForKey("atores") as? String ?? ""
+        self.plot.text = filme.valueForKey("plot") as? String ?? ""
         
         self.titulo.adjustsFontSizeToFitWidth = true
         self.ano.adjustsFontSizeToFitWidth = true
@@ -97,6 +106,11 @@ class DetalheViewController: UIViewController {
         self.diretor.adjustsFontSizeToFitWidth = true
         self.atores.adjustsFontSizeToFitWidth = true
         self.plot.adjustsFontSizeToFitWidth = true
+        
+        let hashValue:String = "\(filmeSelecionado.objectID.hashValue)"
+        let data = NSUserDefaults.standardUserDefaults().objectForKey(hashValue) as! NSData
+        let imagem = UIImage(data: data)
+        cartaz.image = imagem
     }
     
     func atualizarFilme(filmeDict:[String:AnyObject]){
@@ -145,7 +159,7 @@ class DetalheViewController: UIViewController {
                 filmeDict["Actors"] = managedObject.valueForKey("atores")
                 filmeDict["Plot"] = managedObject.valueForKey("plot")
                 filmeDict["Poster"] = managedObject.valueForKey("poster")
-                setInfo(filmeDict)
+                setInfo(managedObject)
             }
         } catch {
             print("Erro ao salvar")

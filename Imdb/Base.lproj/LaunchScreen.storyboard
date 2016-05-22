@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +15,47 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="textura9.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Jwl-yB-q53">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ZUP Movie" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mG1-8J-Q9W">
+                                <rect key="frame" x="99" y="264" width="176" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="ucF-sg-MUE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="58"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.4378560656836461" green="0.4378560656836461" blue="0.4378560656836461" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="3" height="2"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="projector2.png" translatesAutoresizingMaskIntoConstraints="NO" id="MHh-Nb-SYd">
+                                <rect key="frame" x="123" y="106" width="128" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mG1-8J-Q9W" firstAttribute="top" secondItem="MHh-Nb-SYd" secondAttribute="bottom" constant="30" id="8nT-zG-hEM"/>
+                            <constraint firstItem="mG1-8J-Q9W" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Kf2-ul-MRY"/>
+                            <constraint firstItem="Jwl-yB-q53" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="RmJ-zF-WDN"/>
+                            <constraint firstItem="mG1-8J-Q9W" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eKw-QJ-7BO"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Jwl-yB-q53" secondAttribute="bottom" id="mP8-ZV-kkI"/>
+                            <constraint firstItem="Jwl-yB-q53" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="sVg-WM-VOz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jwl-yB-q53" secondAttribute="trailing" constant="-20" id="u7Z-4r-7ri"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="projector2.png" width="127" height="128"/>
+        <image name="textura9.jpg" width="640" height="960"/>
+    </resources>
 </document>

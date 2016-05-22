@@ -11,21 +11,18 @@
 		A655B3451CDF7873001FDB1A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655B3441CDF7873001FDB1A /* Helper.swift */; };
 		A655B3471CDFEC82001FDB1A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655B3461CDFEC82001FDB1A /* Reachability.swift */; };
 		A68422421CDCE64300844EAE /* DetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68422411CDCE64300844EAE /* DetalheViewController.swift */; };
+		A68AF3E91CF1327100DAD7C2 /* projector.png in Resources */ = {isa = PBXBuildFile; fileRef = A68AF3E71CF1327000DAD7C2 /* projector.png */; };
+		A68AF3EA1CF1327100DAD7C2 /* projector2.png in Resources */ = {isa = PBXBuildFile; fileRef = A68AF3E81CF1327000DAD7C2 /* projector2.png */; };
 		A6A478841CDBBCF200C87F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A478831CDBBCF200C87F9F /* AppDelegate.swift */; };
 		A6A478861CDBBCF200C87F9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A478851CDBBCF200C87F9F /* ViewController.swift */; };
 		A6A478891CDBBCF200C87F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A478871CDBBCF200C87F9F /* Main.storyboard */; };
 		A6A4788C1CDBBCF200C87F9F /* Imdb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6A4788A1CDBBCF200C87F9F /* Imdb.xcdatamodeld */; };
 		A6A4788E1CDBBCF200C87F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A4788D1CDBBCF200C87F9F /* Assets.xcassets */; };
 		A6A478911CDBBCF200C87F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A4788F1CDBBCF200C87F9F /* LaunchScreen.storyboard */; };
-		A6E681611CEFFDAE000D1338 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = A6E681601CEFFDAE000D1338 /* add.png */; };
-		A6E681631CEFFE96000D1338 /* add2.png in Resources */ = {isa = PBXBuildFile; fileRef = A6E681621CEFFE96000D1338 /* add2.png */; };
 		A6E681661CF0096C000D1338 /* FIlmeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E681651CF0096C000D1338 /* FIlmeCell.swift */; };
 		A6E681681CF00B80000D1338 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6E681671CF00B80000D1338 /* placeholder.jpg */; };
 		A6EAD4681CF09DE20054EFEA /* add_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A6EAD4671CF09DE20054EFEA /* add_icon.png */; };
-		A6EAD46A1CF0A6B90054EFEA /* textura.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6EAD4691CF0A6B90054EFEA /* textura.jpg */; };
-		A6EAD46C1CF0A8CC0054EFEA /* textura2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6EAD46B1CF0A8CC0054EFEA /* textura2.jpg */; };
-		A6EAD46E1CF0A9F40054EFEA /* textura3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6EAD46D1CF0A9F40054EFEA /* textura3.jpg */; };
-		A6F290D51CEFBC7200031740 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = A6F290D41CEFBC7200031740 /* plus.png */; };
+		A6EAD47A1CF0D34A0054EFEA /* textura9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6EAD4771CF0D34A0054EFEA /* textura9.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +30,9 @@
 		A655B3441CDF7873001FDB1A /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		A655B3461CDFEC82001FDB1A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A68422411CDCE64300844EAE /* DetalheViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheViewController.swift; sourceTree = "<group>"; };
-		A6A478801CDBBCF000C87F9F /* Imdb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imdb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68AF3E71CF1327000DAD7C2 /* projector.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = projector.png; sourceTree = "<group>"; };
+		A68AF3E81CF1327000DAD7C2 /* projector2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = projector2.png; sourceTree = "<group>"; };
+		A6A478801CDBBCF000C87F9F /* ZUPMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZUPMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A478831CDBBCF200C87F9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6A478851CDBBCF200C87F9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6A478881CDBBCF200C87F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,15 +40,10 @@
 		A6A4788D1CDBBCF200C87F9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6A478901CDBBCF200C87F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6A478921CDBBCF200C87F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6E681601CEFFDAE000D1338 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
-		A6E681621CEFFE96000D1338 /* add2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add2.png; sourceTree = "<group>"; };
 		A6E681651CF0096C000D1338 /* FIlmeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIlmeCell.swift; sourceTree = "<group>"; };
 		A6E681671CF00B80000D1338 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 		A6EAD4671CF09DE20054EFEA /* add_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_icon.png; sourceTree = "<group>"; };
-		A6EAD4691CF0A6B90054EFEA /* textura.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = textura.jpg; sourceTree = "<group>"; };
-		A6EAD46B1CF0A8CC0054EFEA /* textura2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = textura2.jpg; sourceTree = "<group>"; };
-		A6EAD46D1CF0A9F40054EFEA /* textura3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = textura3.jpg; sourceTree = "<group>"; };
-		A6F290D41CEFBC7200031740 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		A6EAD4771CF0D34A0054EFEA /* textura9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = textura9.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +78,7 @@
 		A6A478811CDBBCF000C87F9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A6A478801CDBBCF000C87F9F /* Imdb.app */,
+				A6A478801CDBBCF000C87F9F /* ZUPMovie.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,14 +120,11 @@
 		A6F290D31CEFBC5B00031740 /* img */ = {
 			isa = PBXGroup;
 			children = (
-				A6EAD46D1CF0A9F40054EFEA /* textura3.jpg */,
-				A6EAD46B1CF0A8CC0054EFEA /* textura2.jpg */,
-				A6EAD4691CF0A6B90054EFEA /* textura.jpg */,
+				A68AF3E71CF1327000DAD7C2 /* projector.png */,
+				A68AF3E81CF1327000DAD7C2 /* projector2.png */,
+				A6EAD4771CF0D34A0054EFEA /* textura9.jpg */,
 				A6EAD4671CF09DE20054EFEA /* add_icon.png */,
 				A6E681671CF00B80000D1338 /* placeholder.jpg */,
-				A6E681621CEFFE96000D1338 /* add2.png */,
-				A6E681601CEFFDAE000D1338 /* add.png */,
-				A6F290D41CEFBC7200031740 /* plus.png */,
 			);
 			name = img;
 			sourceTree = "<group>";
@@ -141,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A6A4787F1CDBBCF000C87F9F /* Imdb */ = {
+		A6A4787F1CDBBCF000C87F9F /* ZUPMovie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6A478951CDBBCF200C87F9F /* Build configuration list for PBXNativeTarget "Imdb" */;
+			buildConfigurationList = A6A478951CDBBCF200C87F9F /* Build configuration list for PBXNativeTarget "ZUPMovie" */;
 			buildPhases = (
 				A6A4787C1CDBBCF000C87F9F /* Sources */,
 				A6A4787D1CDBBCF000C87F9F /* Frameworks */,
@@ -153,9 +144,9 @@
 			);
 			dependencies = (
 			);
-			name = Imdb;
+			name = ZUPMovie;
 			productName = Imdb;
-			productReference = A6A478801CDBBCF000C87F9F /* Imdb.app */;
+			productReference = A6A478801CDBBCF000C87F9F /* ZUPMovie.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +177,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A6A4787F1CDBBCF000C87F9F /* Imdb */,
+				A6A4787F1CDBBCF000C87F9F /* ZUPMovie */,
 			);
 		};
 /* End PBXProject section */
@@ -198,15 +189,12 @@
 			files = (
 				A6EAD4681CF09DE20054EFEA /* add_icon.png in Resources */,
 				A6A478911CDBBCF200C87F9F /* LaunchScreen.storyboard in Resources */,
+				A68AF3E91CF1327100DAD7C2 /* projector.png in Resources */,
+				A68AF3EA1CF1327100DAD7C2 /* projector2.png in Resources */,
 				A6A4788E1CDBBCF200C87F9F /* Assets.xcassets in Resources */,
-				A6EAD46A1CF0A6B90054EFEA /* textura.jpg in Resources */,
-				A6E681631CEFFE96000D1338 /* add2.png in Resources */,
-				A6EAD46E1CF0A9F40054EFEA /* textura3.jpg in Resources */,
+				A6EAD47A1CF0D34A0054EFEA /* textura9.jpg in Resources */,
 				A6A478891CDBBCF200C87F9F /* Main.storyboard in Resources */,
-				A6EAD46C1CF0A8CC0054EFEA /* textura2.jpg in Resources */,
 				A6E681681CF00B80000D1338 /* placeholder.jpg in Resources */,
-				A6E681611CEFFDAE000D1338 /* add.png in Resources */,
-				A6F290D51CEFBC7200031740 /* plus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +355,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6A478951CDBBCF200C87F9F /* Build configuration list for PBXNativeTarget "Imdb" */ = {
+		A6A478951CDBBCF200C87F9F /* Build configuration list for PBXNativeTarget "ZUPMovie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6A478961CDBBCF200C87F9F /* Debug */,

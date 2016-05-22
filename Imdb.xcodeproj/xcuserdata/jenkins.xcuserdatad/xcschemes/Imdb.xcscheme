@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A6A4787F1CDBBCF000C87F9F"
-               BuildableName = "Imdb.app"
-               BlueprintName = "Imdb"
+               BuildableName = "ZUPMovie.app"
+               BlueprintName = "ZUPMovie"
                ReferencedContainer = "container:Imdb.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A6A4787F1CDBBCF000C87F9F"
-            BuildableName = "Imdb.app"
-            BlueprintName = "Imdb"
+            BuildableName = "ZUPMovie.app"
+            BlueprintName = "ZUPMovie"
             ReferencedContainer = "container:Imdb.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A6A4787F1CDBBCF000C87F9F"
-            BuildableName = "Imdb.app"
-            BlueprintName = "Imdb"
+            BuildableName = "ZUPMovie.app"
+            BlueprintName = "ZUPMovie"
             ReferencedContainer = "container:Imdb.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A6A4787F1CDBBCF000C87F9F"
-            BuildableName = "Imdb.app"
-            BlueprintName = "Imdb"
+            BuildableName = "ZUPMovie.app"
+            BlueprintName = "ZUPMovie"
             ReferencedContainer = "container:Imdb.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
